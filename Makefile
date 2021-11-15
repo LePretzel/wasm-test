@@ -7,7 +7,7 @@ clean:
 	rm -f bin/*
 
 exec: src/*.cc
-	$(CXX) $(CXXFLAGS) $^ $(WASM) -o  bin/exec.js
+	$(CXX) $(CXXFLAGS) $^ $(WASM) -o  wasm/exec.js
 
 src/%.cc: includes/%.hpp
 	touch $@
